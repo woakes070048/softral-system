@@ -1,0 +1,20 @@
+[2016-06-21 14:24:57] local.ERROR: exception 'Illuminate\Session\TokenMismatchException' in C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken.php:46
+Stack trace:
+#0 C:\wamp\www\client_projects\softral1\app\Http\Middleware\VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#1 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#2 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(55): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#4 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(61): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#7 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#8 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(40): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#10 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode.php(42): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(101): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#14 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(115): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#15 C:\wamp\www\client_projects\softral1\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(84): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\client_projects\softral1\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#17 {main}  
